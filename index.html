@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RED LINE AUTO SERVICE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">RED <span>LINE</span></a>
+
+    <nav>
+        <a href="#home" data-i18n="home">Главная</a>
+        <a href="#services" data-i18n="services">Услуги</a>
+        <a href="#about" data-i18n="about">О нас</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#map">Карта</a>
+        <a href="#contacts" data-i18n="contacts">Контакты</a>
+        <a href="#booking" data-i18n="booking">Запись</a>
+    </nav>
+
+    <div class="header-actions">
+        <select id="language" aria-label="Language">
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+            <option value="uz">UZ</option>
+        </select>
+        <button id="themeToggle" class="theme-toggle" type="button">☀</button>
+    </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="eyebrow">RED LINE PERFORMANCE</span>
+        <h1>YOUR CAR.<br><span>OUR PASSION.</span></h1>
+        <p data-i18n="heroText">
+            Профессиональное обслуживание автомобилей. Качество, которому доверяют.
+        </p>
+        <a href="#services" class="primary-btn" data-i18n="heroButton">Наши услуги</a>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+    <div class="section-heading">
+        <span class="eyebrow">RED LINE SERVICE</span>
+        <h2 data-i18n="servicesTitle">Наши услуги</h2>
+        <p data-i18n="servicesText">Комплексное обслуживание вашего автомобиля</p>
+    </div>
+
+    <div class="service-grid" id="serviceGrid">
+
+        <article class="service-card" data-service="diagnostics">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=900" alt="Диагностика автомобиля">
+            <div class="service-content">
+                <h3 data-i18n="diagnostics">Компьютерная диагностика</h3>
+                <p data-i18n="diagnosticsShort">Проверка электронных систем автомобиля</p>
+                <button class="details-btn" data-service="diagnostics" data-i18n="details">Подробнее</button>
+            </div>
+        </article>
+
+        <article class="service-card" data-service="engine">
+            <img src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?w=900" alt="Ремонт двигателя">
+            <div class="service-content">
+                <h3 data-i18n="engine">Ремонт двигателя</h3>
+                <p data-i18n="engineShort">Профессиональное обслуживание двигателя</p>
+                <button class="details-btn" data-service="engine" data-i18n="details">Подробнее</button>
+            </div>
+        </article>
+
+        <article class="service-card" data-service="maintenance">
+            <img src="https://images.unsplash.com/photo-1632823471565-1ecdf5c5c2c2?w=900" alt="Техническое обслуживание">
+            <div class="service-content">
+                <h3 data-i18n="maintenance">Техническое обслуживание</h3>
+                <p data-i18n="maintenanceShort">Регулярное ТО и замена расходников</p>
+                <button class="details-btn" data-service="maintenance" data-i18n="details">Подробнее</button>
+            </div>
+        </article>
+
+        <article class="service-card" data-service="bodywork">
+            <img src="https://images.unsplash.com/photo-1504222490345-c075b6008014?w=900" alt="Кузовной ремонт">
+            <div class="service-content">
+                <h3 data-i18n="bodywork">Кузовной ремонт</h3>
+                <p data-i18n="bodyworkShort">Восстановление кузова и покраска</p>
+                <button class="details-btn" data-service="bodywork" data-i18n="details">Подробнее</button>
+            </div>
+        </article>
+
+        <article class="service-card" data-service="suspension">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=900" alt="Ремонт подвески">
+            <div class="service-content">
+                <h3 data-i18n="suspension">Ремонт подвески</h3>
+                <p data-i18n="suspensionShort">Проверка и ремонт ходовой части</p>
+                <button class="details-btn" data-service="suspension" data-i18n="details">Подробнее</button>
+            </div>
+        </article>
+
+        <article class="service-card" data-service="detailing">
+            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=900" alt="Детейлинг">
+            <div class="service-content">
+                <h3 data-i18n="detailing">Детейлинг</h3>
+                <p data-i18n="detailingShort">Уход за кузовом и салоном</p>
+                <button class="details-btn" data-service="detailing" data-i18n="details">Подробнее</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+    <div class="section-heading">
+        <span class="eyebrow">OUR WORK</span>
+        <h2>Галерея</h2>
+    </div>
+
+    <div class="gallery-grid">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=900" alt="Автомобиль">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=900" alt="Спортивный автомобиль">
+        <img src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?w=900" alt="Автомобиль в сервисе">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about section" id="about">
+    <span class="eyebrow">ABOUT RED LINE</span>
+    <h2 data-i18n="aboutTitle">Профессионализм в каждой детали</h2>
+    <p data-i18n="aboutText">
+        Мы стремимся обеспечить качественное обслуживание и внимательное отношение к каждому автомобилю.
+    </p>
+</section>
+
+<!-- MAP -->
+<section class="section map-section" id="map">
+    <div class="section-heading">
+        <span class="eyebrow">OUR LOCATION</span>
+        <h2>Наше местоположение</h2>
+        <p>RED LINE AUTO SERVICE</p>
+    </div>
+
+    <div class="map-container">
+        <iframe
+            src="https://maps.google.com/maps?q=Moscow%20Russia&t=&z=11&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="420"
+            style="border:0"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<!-- CONTACTS -->
+<section class="contacts section" id="contacts">
+    <span class="eyebrow">CONTACTS</span>
+    <h2 data-i18n="contactsTitle">Свяжитесь с нами</h2>
+    <p>+7 926 668-62-24</p>
+    <p data-i18n="address">Москва, Россия</p>
+</section>
+
+<!-- BOOKING -->
+<section class="booking section" id="booking">
+    <span class="eyebrow">BOOKING</span>
+    <h2 data-i18n="bookingTitle">Запись на обслуживание</h2>
+    <p data-i18n="bookingText">Оставьте заявку, и мы свяжемся с вами.</p>
+
+    <form id="bookingForm">
+        <input id="customerName" type="text" placeholder="Ваше имя" required>
+        <input id="customerPhone" type="tel" placeholder="Телефон" required>
+
+        <select id="serviceType" required>
+            <option value="" data-i18n="chooseService">Выберите услугу</option>
+            <option value="Диагностика">Диагностика</option>
+            <option value="Ремонт двигателя">Ремонт двигателя</option>
+            <option value="Техническое обслуживание">Техническое обслуживание</option>
+            <option value="Кузовной ремонт">Кузовной ремонт</option>
+            <option value="Ремонт подвески">Ремонт подвески</option>
+            <option value="Детейлинг">Детейлинг</option>
+        </select>
+
+        <input id="bookingDate" type="date" required>
+        <textarea id="customerMessage" placeholder="Комментарий"></textarea>
+
+        <!-- КНОПКА ЗАПИСИ В САМОМ КОНЦЕ ФОРМЫ -->
+        <button class="primary-btn" type="submit" data-i18n="submit">
+            ОТПРАВИТЬ ЗАЯВКУ
+        </button>
+
+        <p id="bookingMessage" role="status"></p>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>© <span id="currentYear"></span> RED LINE AUTO SERVICE</p>
+</footer>
+
+<!-- SERVICE MODAL -->
+<div class="modal" id="serviceModal">
+    <div class="modal-content">
+        <button class="modal-close" id="closeServiceModal" type="button">✕</button>
+        <h2 id="detailTitle"></h2>
+        <p id="detailDescription"></p>
+        <h3 id="detailPrice"></h3>
+        <a href="#booking" class="primary-btn" id="detailBooking" data-i18n="detailBooking">Записаться</a>
+    </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div class="admin-modal" id="adminModal">
+    <div class="admin-panel">
+        <div class="admin-header">
+            <h2>RED LINE <span>ADMIN</span></h2>
+            <button id="closeAdmin" type="button">✕</button>
+        </div>
+
+        <div class="admin-tabs">
+            <button class="admin-tab active" data-tab="requests">Заявки</button>
+            <button class="admin-tab" data-tab="services">Услуги и цены</button>
+        </div>
+
+        <section id="requestsTab">
+            <div class="admin-stats">
+                <div>Всего заявок<h2 id="totalRequests">0</h2></div>
+                <div>Новые<h2 id="newRequests">0</h2></div>
+            </div>
+            <div id="adminRequests"></div>
+        </section>
+
+        <section id="servicesTab" hidden>
+            <div id="adminServices"></div>
+        </section>
+    </div>
+</div>
+
+<button id="openAdmin" class="admin-trigger" type="button">⚙ ADMIN</button>
+
+<!-- MAIN SCRIPT -->
+<script src="script.js"></script>
+
+<!-- SERVER API: server.js запускается отдельно на сервере -->
+</body>
+</html>
